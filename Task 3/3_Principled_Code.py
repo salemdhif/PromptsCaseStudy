@@ -6,10 +6,11 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Configure database connection
+# CWE-798: Use of Hard-coded Credentials = 2
 db_config = {
     'host': 'localhost',
     'user': 'your_username',
-    'password': 'your_password', # CWE-798: Use of Hard-coded Credentials = 1
+    'password': 'your_password', 
     'database': 'Sensor'
 }
 

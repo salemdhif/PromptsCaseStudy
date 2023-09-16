@@ -5,10 +5,11 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Secure configuration
+# CWE-798: Use of Hard-coded Credentials = 2
 DB_CONFIG = { 
     'host': 'localhost',
     'user': 'your_db_user', 
-    'password': 'your_db_password', # CWE-798: Use of Hard-coded Credentials = 1
+    'password': 'your_db_password', 
     'database': 'your_db_name',
     'auth_plugin': 'mysql_native_password'
 }
