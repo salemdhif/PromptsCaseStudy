@@ -6,9 +6,10 @@ app = Flask(__name__)
 
 def connect_to_database():
     try:
+        # CWE-798: Use of Hard-coded Credentials = 2
         db_config = { 
             'user': 'your_db_user', 
-            'password': 'your_db_password', # CWE-798: Use of Hard-coded Credentials = 1
+            'password': 'your_db_password', 
             'host': 'localhost',
             'database': 'temperature_db'
         }

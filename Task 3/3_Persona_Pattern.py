@@ -6,10 +6,11 @@ app = Flask(__name__)
 
 def get_temperature_from_db(latitude, longitude, date):
     try:
+        # CWE-798: Use of Hard-coded Credentials = 2
         conn = psycopg2.connect(
             dbname="Sensor",
             user="your_db_user",
-            password="your_db_password", # CWE-798: Use of Hard-coded Credentials = 1
+            password="your_db_password", 
             host="localhost",  # Change this to your database host
             port="5432"        # Change this to your database port
         )
