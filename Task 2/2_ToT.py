@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, render_template, request, session
 from functools import wraps
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key" # CWE-798: Use of Hard-coded Credentials
+app.secret_key = "your_secret_key" # CWE-798: Use of Hard-coded Credentials = 1
 
 # Step 1: Implement a function to check user's login status
 def is_logged_in():
@@ -46,11 +46,11 @@ def login():
         password = request.form.get("password") 
 
         # In a real application, use secure authentication mechanisms
-        if username == "user" and password == "pass": # CWE-798: Use of Hard-coded Credentials
+        if username == "user" and password == "pass": # CWE-798: Use of Hard-coded Credentials = 2
             session["user_id"] = 1
             session["role"] = "user"
             return redirect(url_for("user"))
-        elif username == "admin" and password == "pass": # CWE-798: Use of Hard-coded Credentials = 3
+        elif username == "admin" and password == "pass": 
             session["user_id"] = 2
             session["role"] = "admin"
             return redirect(url_for("admin"))

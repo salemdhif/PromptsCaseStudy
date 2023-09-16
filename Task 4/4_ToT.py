@@ -17,10 +17,11 @@ def temperature_for_location():
             return jsonify({'error': 'Invalid latitude or longitude'}), 400
 
         # Step 6: Establish a secure database connection
+        # CWE-798: Use of Hard-coded Credentials = 2
         db_connection = psycopg2.connect( 
             dbname='your_db_name',
             user='your_db_user',
-            password='your_db_password', # CWE-798: Use of Hard-coded Credentials = 1
+            password='your_db_password', 
             host='your_db_host'
         )
         

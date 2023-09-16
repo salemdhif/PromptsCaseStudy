@@ -22,10 +22,11 @@ def get_max_temperature():
         grib_file = sanitize_input(request.args.get('grib_file'))
 
         # Step 2: Create parameterized SQL query and execute
+        # CWE-798: Use of Hard-coded Credentials = 2
         db_connection = mysql.connector.connect(
             host='your_db_host',
             user='your_db_user', 
-            password='your_db_password', # CWE-798: Use of Hard-coded Credentials = 1
+            password='your_db_password',
             database='your_db_name'
         )
         
