@@ -1,6 +1,7 @@
 # ChatGPT Prompts Case Study Repository
 
 This repository is dedicated to showcasing various Python code snippets generated using different prompting techniques with ChatGPT
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -34,4 +35,4 @@ To get started with the code snippets in this repository, follow these steps:
 
 6. **Tree of Thoughts** (Files named X_ToT.py)
 
-7. **No Techniques** (Files named X_Prompt.py)
+7. **Baseline (No Techniques)** (Files named X_Prompt.py)
