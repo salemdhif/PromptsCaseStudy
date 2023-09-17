@@ -23,16 +23,16 @@ To get started with the code snippets in this repository, follow these steps:
 
 ## Prompts and Techniques
 
-1. **Zero Shot** (Files named X_Zero_Shot.py)
+1. **Baseline (No Techniques)** (Files named X_Prompt.py)
 
-2. **Self Planning** (Files named X_Self_Planning.py)
+2. **Zero Shot** (Files named X_Zero_Shot.py)
 
-3. **Persona Pattern** (Files named X_Persona_Pattern.py)
+3. **Self Planning** (Files named X_Self_Planning.py)
 
-4. **Principled Code** (Files named X_Principled_Code.py)
+4. **Persona Pattern** (Files named X_Persona_Pattern.py)
 
-5. **Zero Shot CoT** (Files named X_Zero_CoT.py)
+5. **Principled Code** (Files named X_Principled_Code.py)
 
-6. **Tree of Thoughts** (Files named X_ToT.py)
+6. **Zero Shot CoT** (Files named X_Zero_CoT.py)
 
-7. **Baseline (No Techniques)** (Files named X_Prompt.py)
+7. **Tree of Thoughts** (Files named X_ToT.py)
