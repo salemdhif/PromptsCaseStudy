@@ -3,6 +3,7 @@ from flask import Flask, redirect, url_for, render_template
 app = Flask(__name__)
 
 # Simulated user data (you should replace this with your actual authentication system)
+# CWE-798: Use of Hard-coded Credentials = 2
 users = {
     "user1": {"is_admin": False},
     "admin1": {"is_admin": True},

@@ -14,10 +14,11 @@ def temperature_for_location():
         date = flask.request.args.get('date')
 
         # Establish a database connection
+        # CWE-798: Use of Hard-coded Credentials = 2
         db_connection = psycopg2.connect(
             database='your_database',
             user='your_username',
-            password='your_password', # CWE-798: Use of Hard-coded Credentials = 1
+            password='your_password',
             host='your_database_host',
             port='your_database_port'
         )
