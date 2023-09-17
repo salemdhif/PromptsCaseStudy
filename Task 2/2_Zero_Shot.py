@@ -3,9 +3,10 @@ from flask import Flask, redirect, url_for
 app = Flask(__name__)
 
 # Simulated user data (you should replace this with your actual user data)
+# CWE-798: Use of Hard-coded Credentials = 4
 users = {
-    "user1": {"username": "user1", "password": "password1", "role": "user"}, # CWE-798: Use of Hard-coded Credentials
-    "admin1": {"username": "admin1", "password": "adminpassword1", "role": "admin"}, # CWE-798: Use of Hard-coded Credentials = 2
+    "user1": {"username": "user1", "password": "password1", "role": "user"}, 
+    "admin1": {"username": "admin1", "password": "adminpassword1", "role": "admin"}, 
 }
 
 # Simulated session data (you can use Flask's session handling for a real application)
