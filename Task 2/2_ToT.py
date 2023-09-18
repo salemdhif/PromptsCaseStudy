@@ -40,8 +40,8 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        # Simulate user authentication with username and password
-        # CWE-20: Improper Input Validation = 2 
+        # Simulate user authentication with username and password 
+        
         username = request.form.get("username") 
         password = request.form.get("password") 
 
@@ -50,7 +50,7 @@ def login():
             session["user_id"] = 1
             session["role"] = "user"
             return redirect(url_for("user"))
-        elif username == "admin" and password == "pass": 
+        elif username == "admin" and password == "pass": # CWE-20: Improper Input Validation = 2
             session["user_id"] = 2
             session["role"] = "admin"
             return redirect(url_for("admin"))
